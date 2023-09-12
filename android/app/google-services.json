@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "897893225168",
+    "project_id": "dan-login-flutter---firebase",
+    "storage_bucket": "dan-login-flutter---firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:897893225168:android:2aec462051b7ff694ac4d5",
+        "android_client_info": {
+          "package_name": "com.example.dan_login_flutter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "897893225168-s2ii2c4ek6uq53r4j6mr3r2hmm6sb3pi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCWRN7gkrOOUSD57nWCqEx--Mas2HRSLo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "897893225168-s2ii2c4ek6uq53r4j6mr3r2hmm6sb3pi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
