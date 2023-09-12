@@ -8,7 +8,7 @@ final user = FirebaseAuth.instance.currentUser;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Home Page"),actions: [IconButton(onPressed: () async {
+      appBar: AppBar(title: Text("Home Page"),centerTitle: true,actions: [IconButton(onPressed: () async {
        await  FirebaseAuth.instance.signOut();
        Navigator.popAndPushNamed(context,'/login');
        }, icon:Icon(Icons.logout))],),

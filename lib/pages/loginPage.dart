@@ -45,9 +45,9 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: Text("Log In "),
-          backgroundColor: Colors.blue,
+        appBar: AppBar(centerTitle: true,
+          title: Text("Log In ",style: TextStyle(fontWeight: FontWeight.bold),),
+          backgroundColor: Colors.lightBlue,
           foregroundColor: Colors.white,
         ),
         body: Center(
@@ -56,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
           child: Form(
             key: _formKey,
             child: Column(
-              children: [
+              children: [ Icon(Icons.security,size: 200,color: Colors.green,),
                 SizedBox(height: 80),
                 TextFormField(
                   controller: _email,
@@ -72,8 +72,8 @@ class _LoginPageState extends State<LoginPage> {
                       focusedBorder: OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.blue, width: 2.0)),
-                      icon: Icon(Icons.mail),
-                      labelText: "Email"),
+                      icon: Icon(Icons.mail,color: CupertinoColors.activeBlue,),
+                      labelText: "Email",labelStyle: TextStyle(color: Colors.lightBlue)),
                 ),
                 SizedBox(
                   height: MediaQuery.of(context).size.height * 0.025,
@@ -94,8 +94,8 @@ class _LoginPageState extends State<LoginPage> {
                       focusedBorder: OutlineInputBorder(
                           borderSide:
                               BorderSide(color: Colors.blue, width: 2.0)),
-                      icon: Icon(Icons.shield),
-                      labelText: "Password"),
+                      icon: Icon(Icons.shield,color: CupertinoColors.activeBlue,),
+                      labelText: "Password",labelStyle: TextStyle(color: Colors.lightBlue)),
                 ),
                 SizedBox(
                   height: 30,
@@ -132,9 +132,11 @@ class _LoginPageState extends State<LoginPage> {
                     // FirebaseAuth.instance.a
                     Navigator.popAndPushNamed(context, '/signUp');
                   },
-                  label: Text("SignUp"),
-                )
-              ],
+                  label: Text("SignUp ?"),
+                ),SizedBox(height: 20,)
+
+              ,Text("Name : Darshan Nagle \n  Enrollment Number : 12002040701019",textAlign: TextAlign.center,)],
+
             ),
           ),
         )));

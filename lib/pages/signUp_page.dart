@@ -15,15 +15,16 @@ class _SignUpPageState extends State<SignUpPage> {
   bool isLoading= false;
   @override
   Widget build(BuildContext context) {
-    double inpWidth = MediaQuery.sizeOf(context).width*0.7;
-    return Scaffold(appBar: AppBar(title:Text("Sign Up "),backgroundColor: Colors.blue,foregroundColor: Colors.white,),
+    double inpWidth = MediaQuery.sizeOf(context).width*0.8;
+    return Scaffold(appBar: AppBar(centerTitle: true,title:Text("Sign Up "),backgroundColor: Colors.blue,foregroundColor: Colors.white,),
         body: Center(
             child: Padding(
               padding: const EdgeInsets.all(20.0),
               child: Form(
                 key: _formKey,
                 child: Column(
-                  children: [SizedBox(height: 80),
+                  children: [Icon(Icons.security,size: 200,color: Colors.green,),
+                    SizedBox(height: 80),
                     Container(width: inpWidth,
                       child: TextFormField(
                         controller: _email,
@@ -91,7 +92,9 @@ class _SignUpPageState extends State<SignUpPage> {
                         Navigator.popAndPushNamed(context, '/login');
                       },
                       label: (isLoading)? Center(child: CircularProgressIndicator(color: Colors.white,)) : Text("SignIn"),
-                    ),
+
+                    ),SizedBox(height: 20,),Text("Name : Darshan Nagle \n  Enrollment Number : 12002040701019",textAlign: TextAlign.center,)
+
 
 
                   ],
